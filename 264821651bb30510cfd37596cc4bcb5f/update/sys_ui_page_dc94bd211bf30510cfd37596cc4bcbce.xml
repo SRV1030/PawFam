@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_page">
+    <sys_ui_page action="INSERT_OR_UPDATE">
+        <category>general</category>
+        <client_script><![CDATA[jQuery('#addPet').click(function () {
+  var ga = new GlideAjax('pawfamutils');
+  ga.addParam('sysparm_name', 'createPet');
+  ga.addParam('sysparm_pet_name', jQuery('#petName').val());
+  ga.addParam('sysparm_pet_age', jQuery('#petAge').val());
+  ga.addParam('sysparm_pet_neutered', jQuery('#petNeurter').is(':checked'));
+  ga.addParam('sysparm_pet_shots', jQuery('#petShots').is(':checked'));
+  ga.getXML(fetchBallback);
+
+});
+
+function fetchBallback(response) {
+  var answer = response.responseXML.documentElement.getAttribute("answer").split('|');
+  jQuery('.msg').append('<p>' + answer[0] + ' has successfully been created. pet ID: ' + answer[1] + '</p><br/><a href="' + answer[2] + '">View new pet </a>');
+
+}]]></client_script>
+        <description/>
+        <direct>false</direct>
+        <endpoint>x_828455_pawfam_Create Pet.do</endpoint>
+        <html><![CDATA[<?xml version="1.0" encoding="utf-8" ?>
+<j:jelly trim="false" xmlns:j="jelly:core" xmlns:g="glide" xmlns:j2="null" xmlns:g2="null">
+
+    <h1>Add a new Pet</h1>
+    <form class="form-horizontal">
+        <div class="form-group">
+            <label for="petName" class="col-sm-2 control-label">Name of pet:</label>
+            <div class="col-sm-2">
+                <input type="text" class="form-control" id="petName" />
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="petAge" class="col-sm-2 control-label">Age of pet:</label>
+            <div class="col-sm-2">
+                <input type="text" class="form-control" id="petAge" />
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-10">
+                <label for="petShots">
+                    Pet Shots
+                    <input id="petShots" type="checkbox" />
+                </label>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-10">
+                <label for="petNeurter">
+                    Pet Neurter
+                    <input id="petNeurter" type="checkbox" />
+                </label>
+            </div>
+        </div>
+    </form>
+
+    <button id="addPet" class="btn btn-default">Add Pet</button>
+    <div class="msg"></div>
+
+</j:jelly>
+]]></html>
+        <name>Create Pet</name>
+        <processing_script/>
+        <sys_class_name>sys_ui_page</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-05-31 06:15:22</sys_created_on>
+        <sys_id>dc94bd211bf30510cfd37596cc4bcbce</sys_id>
+        <sys_mod_count>19</sys_mod_count>
+        <sys_name>Create Pet</sys_name>
+        <sys_package display_value="PawFam" source="x_828455_pawfam">264821651bb30510cfd37596cc4bcb5f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="PawFam">264821651bb30510cfd37596cc4bcb5f</sys_scope>
+        <sys_update_name>sys_ui_page_dc94bd211bf30510cfd37596cc4bcbce</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-06-01 09:12:51</sys_updated_on>
+    </sys_ui_page>
+</record_update>

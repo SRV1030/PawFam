@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_page">
+    <sys_ui_page action="DELETE">
+        <category>general</category>
+        <client_script><![CDATA[jQuery('#addPet').click(function(){
+    var ga = new GlideAjax('pawfamutils');
+    ga.addParam('sysparm_name','createPet');
+    ga.addParam('sysparm_name',jQuery('#petName').val());
+    ga.addParam('sysparm_age',jQuery('#petAge').val());
+    ga.addParam('sysparm_neutered',jQuery('#petNeurter').is(':checked'));
+    ga.addParam('sysparm_shots',jQuery('#petShots').is(':checked'));
+    ga.getXML(fetchPetBack);
+});
+function fetchPetBack(response){
+  var answer= response.responseXML.documentElement.getAttribute('answer').split('|');
+  jQuery('#msg').append('<p>'+answer[0]+' has succesfully been created with Pet Id: '+ answer[1]+'</p><br/><a href"'+answer[2]+'">Visit here</a>');
+
+}]]></client_script>
+        <description/>
+        <direct>false</direct>
+        <endpoint>x_828455_pawfam_Create Pet.do</endpoint>
+        <html><![CDATA[<?xml version="1.0" encoding="utf-8" ?>
+<j:jelly trim="false" xmlns:j="jelly:core" xmlns:g="glide" xmlns:j2="null" xmlns:g2="null">
+
+    <h1>Add a new Pet</h1>
+    <form class="form-horizontal">
+        <div class="form-group">
+            <label for="petName" class="col-sm-2 control-label">Name of pet:</label>
+            <div class="col-sm-2">
+                <input type="text" class="form-control" id="petName" />
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="petAge" class="col-sm-2 control-label">Age of pet:</label>
+            <div class="col-sm-2">
+                <input type="text" class="form-control" id="petAge" />
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-10">
+                <label for="petShots">
+                    Pet Shots
+                    <input id="petShots" type="checkbox" />
+                </label>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-10">
+                <label for="petNeurter">
+                    Pet Neurter
+                    <input id="petNeurter" type="checkbox" />
+                </label>
+            </div>
+        </div>
+    </form>
+
+    <button id="addPet" class="btn btn-default">Add Pet</button>
+    <div class="msg"></div>
+
+</j:jelly>]]></html>
+        <name>Create Pet</name>
+        <processing_script/>
+        <sys_class_name>sys_ui_page</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-05-31 05:56:59</sys_created_on>
+        <sys_id>ca14f9ad1bb30510cfd37596cc4bcb1d</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Create Pet</sys_name>
+        <sys_package display_value="PawFam" source="x_828455_pawfam">264821651bb30510cfd37596cc4bcb5f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="PawFam">264821651bb30510cfd37596cc4bcb5f</sys_scope>
+        <sys_update_name>sys_ui_page_ca14f9ad1bb30510cfd37596cc4bcb1d</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-05-31 06:16:16</sys_updated_on>
+    </sys_ui_page>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="PawFam">264821651bb30510cfd37596cc4bcb5f</application>
+        <file_path/>
+        <instance_id>fa0b4ae1db0fb7800b9d21c405961932</instance_id>
+        <instance_name>dev90541</instance_name>
+        <name>sys_ui_page_ca14f9ad1bb30510cfd37596cc4bcb1d</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_ui_page"&gt;&lt;sys_ui_page action="INSERT_OR_UPDATE"&gt;&lt;category&gt;general&lt;/category&gt;&lt;client_script&gt;&lt;![CDATA[jQuery('#addPet').click(function(){
+    var ga = new GlideAjax('pawfamutils');
+    ga.addParam('sysparm_name','createPet');
+    ga.addParam('sysparm_name',jQuery('#petName').val());
+    ga.addParam('sysparm_age',jQuery('#petAge').val());
+    ga.addParam('sysparm_neutered',jQuery('#petNeurter').is(':checked'));
+    ga.addParam('sysparm_shots',jQuery('#petShots').is(':checked'));
+    ga.getXML(fetchPetBack);
+});
+function fetchPetBack(response){
+  var answer= response.responseXML.documentElement.getAttribute('answer').split('|');
+  jQuery('#msg').append('&lt;p&gt;'+answer[0]+' has succesfully been created with Pet Id: '+ answer[1]+'&lt;/p&gt;&lt;br/&gt;&lt;a href"'+answer[2]+'"&gt;Visit here&lt;/a&gt;');
+
+}]]&gt;&lt;/client_script&gt;&lt;description/&gt;&lt;direct&gt;false&lt;/direct&gt;&lt;endpoint&gt;x_828455_pawfam_Create Pet.do&lt;/endpoint&gt;&lt;html&gt;&lt;![CDATA[&lt;?xml version="1.0" encoding="utf-8" ?&gt;
+&lt;j:jelly trim="false" xmlns:j="jelly:core" xmlns:g="glide" xmlns:j2="null" xmlns:g2="null"&gt;
+
+    &lt;h1&gt;Add a new Pet&lt;/h1&gt;
+    &lt;form class="form-horizontal"&gt;
+        &lt;div class="form-group"&gt;
+            &lt;label for="petName" class="col-sm-2 control-label"&gt;Name of pet:&lt;/label&gt;
+            &lt;div class="col-sm-2"&gt;
+                &lt;input type="text" class="form-control" id="petName" /&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class="form-group"&gt;
+            &lt;label for="petAge" class="col-sm-2 control-label"&gt;Age of pet:&lt;/label&gt;
+            &lt;div class="col-sm-2"&gt;
+                &lt;input type="text" class="form-control" id="petAge" /&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class="form-group"&gt;
+            &lt;div class="col-sm-offset-2 col-sm-10"&gt;
+                &lt;label for="petShots"&gt;
+                    Pet Shots
+                    &lt;input id="petShots" type="checkbox" /&gt;
+                &lt;/label&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class="form-group"&gt;
+            &lt;div class="col-sm-offset-2 col-sm-10"&gt;
+                &lt;label for="petNeurter"&gt;
+                    Pet Neurter
+                    &lt;input id="petNeurter" type="checkbox" /&gt;
+                &lt;/label&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/form&gt;
+
+    &lt;button id="addPet" class="btn btn-default"&gt;Add Pet&lt;/button&gt;
+    &lt;div class="msg"&gt;&lt;/div&gt;
+
+&lt;/j:jelly&gt;]]&gt;&lt;/html&gt;&lt;name&gt;Create Pet&lt;/name&gt;&lt;processing_script/&gt;&lt;sys_class_name&gt;sys_ui_page&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-05-31 05:56:59&lt;/sys_created_on&gt;&lt;sys_id&gt;ca14f9ad1bb30510cfd37596cc4bcb1d&lt;/sys_id&gt;&lt;sys_mod_count&gt;2&lt;/sys_mod_count&gt;&lt;sys_name&gt;Create Pet&lt;/sys_name&gt;&lt;sys_package display_value="PawFam" source="x_828455_pawfam"&gt;264821651bb30510cfd37596cc4bcb5f&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="PawFam"&gt;264821651bb30510cfd37596cc4bcb5f&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ui_page_ca14f9ad1bb30510cfd37596cc4bcb1d&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-05-31 06:16:16&lt;/sys_updated_on&gt;&lt;/sys_ui_page&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>704951184</payload_hash>
+        <record_name>Create Pet</record_name>
+        <reverted_from/>
+        <source>224821651bb30510cfd37596cc4bcb61</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-05-31 06:16:16</sys_created_on>
+        <sys_id>31983da11bf30510cfd37596cc4bcbf6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18118c202590000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-05-31 06:16:16</sys_updated_on>
+        <type>UI Page</type>
+        <update_guid>79983da187f305103b6ea4868ecc0af5</update_guid>
+        <update_guid_history>79983da187f305103b6ea4868ecc0af5:704951184,3a88316574f30510d3cf337279e6d4df:-1649961789,9b24f9ad48b30510e0af09a3b4737d2c:8734687</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-05-31 06:17:30</sys_created_on>
+        <sys_db_object display_value="" name="sys_ui_page">sys_ui_page</sys_db_object>
+        <sys_id>60608a0de8194284b4f0de1d621eda84</sys_id>
+        <sys_metadata>ca14f9ad1bb30510cfd37596cc4bcb1d</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Create Pet</sys_name>
+        <sys_package display_value="PawFam" source="x_828455_pawfam">264821651bb30510cfd37596cc4bcb5f</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="PawFam">264821651bb30510cfd37596cc4bcb5f</sys_scope>
+        <sys_scope_delete display_value="">156230590dc74bd5873664e02daf0be1</sys_scope_delete>
+        <sys_update_name>sys_ui_page_ca14f9ad1bb30510cfd37596cc4bcb1d</sys_update_name>
+        <sys_update_version display_value="sys_ui_page_ca14f9ad1bb30510cfd37596cc4bcb1d">31983da11bf30510cfd37596cc4bcbf6</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-05-31 06:17:30</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
