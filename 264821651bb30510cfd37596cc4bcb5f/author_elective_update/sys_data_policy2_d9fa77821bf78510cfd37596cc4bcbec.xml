@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_data_policy2">
+    <sys_data_policy2 action="DELETE">
+        <active>true</active>
+        <apply_import_set>true</apply_import_set>
+        <apply_soap>true</apply_soap>
+        <conditions table="x_828455_pawfam_pets">status=adopted^EQ<item display_value="Adopted" endquery="false" field="status" goto="false" newquery="false" operator="=" or="false" value="adopted"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </conditions>
+        <description/>
+        <enforce_ui>true</enforce_ui>
+        <inherit>false</inherit>
+        <model_id/>
+        <model_table>x_828455_pawfam_pets</model_table>
+        <reverse_if_false>false</reverse_if_false>
+        <short_description>Must have shots and neutered before status is adopted</short_description>
+        <sys_class_name>sys_data_policy2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-06-02 05:04:07</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>d9fa77821bf78510cfd37596cc4bcbec</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Must have shots and neutered before status is adopted</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="PawFam" source="x_828455_pawfam">264821651bb30510cfd37596cc4bcb5f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="PawFam">264821651bb30510cfd37596cc4bcb5f</sys_scope>
+        <sys_update_name>sys_data_policy2_d9fa77821bf78510cfd37596cc4bcbec</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-06-02 05:04:07</sys_updated_on>
+    </sys_data_policy2>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="PawFam">264821651bb30510cfd37596cc4bcb5f</application>
+        <file_path/>
+        <instance_id>fa0b4ae1db0fb7800b9d21c405961932</instance_id>
+        <instance_name>dev90541</instance_name>
+        <name>sys_data_policy2_d9fa77821bf78510cfd37596cc4bcbec</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_data_policy2"><sys_data_policy2 action="INSERT_OR_UPDATE"><active>true</active><apply_import_set>true</apply_import_set><apply_soap>true</apply_soap><conditions table="x_828455_pawfam_pets">status=adopted^EQ<item display_value="Adopted" endquery="false" field="status" goto="false" newquery="false" operator="=" or="false" value="adopted"/><item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/></conditions><description/><enforce_ui>true</enforce_ui><inherit>false</inherit><model_id/><model_table>x_828455_pawfam_pets</model_table><reverse_if_false>false</reverse_if_false><short_description>Must have shots and neutered before status is adopted</short_description><sys_class_name>sys_data_policy2</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2022-06-02 05:04:07</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>d9fa77821bf78510cfd37596cc4bcbec</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Must have shots and neutered before status is adopted</sys_name><sys_overrides/><sys_package display_value="PawFam" source="x_828455_pawfam">264821651bb30510cfd37596cc4bcb5f</sys_package><sys_policy/><sys_scope display_value="PawFam">264821651bb30510cfd37596cc4bcb5f</sys_scope><sys_update_name>sys_data_policy2_d9fa77821bf78510cfd37596cc4bcbec</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2022-06-02 05:04:07</sys_updated_on></sys_data_policy2></record_update>]]></payload>
+        <payload_hash>-367079737</payload_hash>
+        <record_name>Must have shots and neutered before status is adopted</record_name>
+        <reverted_from/>
+        <source>224821651bb30510cfd37596cc4bcb61</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-06-02 05:04:07</sys_created_on>
+        <sys_id>d84bb7821bf78510cfd37596cc4bcb17</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18122ccaa2d0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-06-02 05:04:07</sys_updated_on>
+        <type>Data Policy</type>
+        <update_guid>d04bb78264f7851002b0eddf713f3317</update_guid>
+        <update_guid_history>d04bb78264f7851002b0eddf713f3317:-367079737</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-06-02 05:05:02</sys_created_on>
+        <sys_db_object display_value="" name="sys_data_policy2">sys_data_policy2</sys_db_object>
+        <sys_id>123df7c10daa4202b0052afc1d81fdc1</sys_id>
+        <sys_metadata>d9fa77821bf78510cfd37596cc4bcbec</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Must have shots and neutered before status is adopted</sys_name>
+        <sys_package display_value="PawFam" source="x_828455_pawfam">264821651bb30510cfd37596cc4bcb5f</sys_package>
+        <sys_parent display_value="Pets">6e4961a51bb30510cfd37596cc4bcbee</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="PawFam">264821651bb30510cfd37596cc4bcb5f</sys_scope>
+        <sys_scope_delete display_value="">156230590dc74bd5873664e02daf0be1</sys_scope_delete>
+        <sys_update_name>sys_data_policy2_d9fa77821bf78510cfd37596cc4bcbec</sys_update_name>
+        <sys_update_version display_value="sys_data_policy2_d9fa77821bf78510cfd37596cc4bcbec">d84bb7821bf78510cfd37596cc4bcb17</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-06-02 05:05:02</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="breed" table="x_828455_pawfam_pets" version="3">
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>breed</element>
+            <name>x_828455_pawfam_pets</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-05-31 05:19:57</sys_created_on>
+            <sys_id>f4bb2de51bb30510cfd37596cc4bcb9a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>breed</sys_name>
+            <sys_package display_value="PawFam" source="x_828455_pawfam">264821651bb30510cfd37596cc4bcb5f</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="PawFam">264821651bb30510cfd37596cc4bcb5f</sys_scope>
+            <sys_update_name>sys_choice_x_828455_pawfam_pets_breed</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-05-31 05:19:57</sys_updated_on>
+        </sys_choice_set>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>breed</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Dog</label>
+            <language>en</language>
+            <name>x_828455_pawfam_pets</name>
+            <sequence>0</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-05-31 05:19:57</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>cc9b29291bb30510cfd37596cc4bcbd3</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-05-31 05:19:57</sys_updated_on>
+            <value>dog</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>breed</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Cat</label>
+            <language>en</language>
+            <name>x_828455_pawfam_pets</name>
+            <sequence>1</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-05-31 05:20:46</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>e7bb65291bb30510cfd37596cc4bcb09</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-05-31 05:20:46</sys_updated_on>
+            <value>cat</value>
+        </sys_choice>
+    </sys_choice>
+</record_update>
